@@ -1,86 +1,113 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #ffffff; /* dark blue */
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #111;
     line-height: 1.6;
-    padding: 40px;
 }
 
-/* Title */
-h1 {
-    text-align: center;
-    font-size: 2.8rem;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    color: #ff3b30;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
 }
 
-hr {
-    border: none;
-    height: 1px;
-    background: #222222;
-    margin: 20px auto;
-    width: 100%;
-}
-
-a {
+nav a {
     text-decoration: none;
-    color: #ff3b30;
-    margin: 0 15px;
-    font-size: 1rem;
-    position: relative;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
     transition: 0.3s;
 }
 
-/* Center nav */
-body > a {
-    display: inline-block;
-    margin-top: 10px;
+nav a:hover {
+    color: #000;
 }
 
-body {
+/* Hero Section */
+section:first-of-type {
     text-align: center;
+    padding: 60px 20px;
 }
 
-/* Hover effect */
-a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 0;
-    bottom: -5px;
-    background: #ff3b30;
-    transition: 0.3s;
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-a:hover {
-    color: #ff3b30;
+section:first-of-type p {
+    color: #555;
+    margin-bottom: 30px;
 }
 
-a:hover::after {
-    width: 100%;
+/* Hero Images */
+section:first-of-type img {
+    margin: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-p {
-    max-width: 700px;
-    margin: 40px auto;
-    font-size: 1.1rem;
-    color: #000000;
-    text-align: justify;
+
+/* Work Section */
+section:nth-of-type(2) {
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+section:nth-of-type(2) p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Mood Board Rows */
+.mood-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* allows horizontal scroll if needed */
+    padding: 10px 0 20px;
+}
+
+.mood-row img {
+    width: 170px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.mood-row img:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Footer */
 footer {
-    margin-top: 60px;
-    font-size: 0.9rem;
-    color: #64748b;
-    border-top: 1px solid #1e293b;
-    padding-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+    background: #fff;
 }
