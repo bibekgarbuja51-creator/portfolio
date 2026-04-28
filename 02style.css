@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -34,7 +33,6 @@ nav a:hover {
     color: #000;
 }
 
-/* Hero Section */
 section:first-of-type {
     text-align: center;
     padding: 60px 20px;
@@ -50,15 +48,14 @@ section:first-of-type p {
     margin-bottom: 30px;
 }
 
-/* Hero Images */
+
 section:first-of-type img {
     margin: 10px;
-    border-radius: 12px;
+    border-radius: 25px;
     transition: transform 0.3s ease;
 }
 
 
-/* Work Section */
 section:nth-of-type(2) {
     padding: 60px 40px;
     max-width: 1100px;
@@ -80,7 +77,6 @@ section:nth-of-type(2) p {
     color: #555;
 }
 
-/* Mood Board Rows */
 .mood-row {
     display: flex;
     gap: 15px;
@@ -102,7 +98,6 @@ section:nth-of-type(2) p {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
