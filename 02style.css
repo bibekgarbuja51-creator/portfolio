@@ -26,11 +26,12 @@ nav a {
     color: #666;
     font-size: 14px;
     letter-spacing: 1px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #000;
+    transform: scale(1.17);
+    color: #ffcc00;
 }
 
 section:first-of-type {
