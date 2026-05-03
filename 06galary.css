@@ -14,9 +14,9 @@ nav a {
     letter-spacing: 1px;
     transition: 0.3s;
 }
-
 nav a:hover {
-    color: #000;
+    transform: scale(1.1);
+    color: #ffcc00;
 }
 body {
     font-family: Arial, sans-serif;

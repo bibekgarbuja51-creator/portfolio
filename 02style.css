@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.17);
+    transform: scale(1.1);
     color: #ffcc00;
 }
 
@@ -106,4 +106,7 @@ footer {
     color: #666;
     font-size: 14px;
     background: #fff;
+}
+#name {
+    width: 400px;
 }
