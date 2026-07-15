@@ -110,18 +110,26 @@ footer {
 #name {
     width: 400px;
 }
-@media (max-width: 480px) {
+@media(max-width:768px){
 
-nav ul {
-Display: none;
+.nav{
+    flex-direction:column;
+    gap:20px;
 }
-nav h1 {
-font-size: 18px;
+
+nav{
+    flex-direction:column;
+    text-align:center;
 }
-section {
-padding: 40px 15px;
 
-} 
-section h2 {
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
 
+.projects{
+    grid-template-columns:1fr;
+}
+
+}
 font-size: 22px; }}
